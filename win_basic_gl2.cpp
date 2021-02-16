@@ -56,7 +56,7 @@ public:
 class RendererGL2 //: public IRenderer
 {
 public:
-	HGLRC m_hRC = nullptr; 
+	HGLRC m_hRC = nullptr;
     HDC m_hDC = nullptr;
 	HWND m_render_wnidow = nullptr;
 
