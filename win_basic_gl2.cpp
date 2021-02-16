@@ -6,7 +6,7 @@
 
 #if defined(_MSC_VER)
 	#pragma comment(lib, "winmm.lib")
-	#pragma comment(lib, "OpenGL32.lib")
+	#pragma comment(lib, "OpenGL32.lib") 
 #endif
 
 using uint = unsigned int;
