@@ -29,12 +29,12 @@
 // On 64 bit windows platforms.
 // int, long - 32 bit
 // ULONG - 32 bit, use portable ULONG_PTR instead
-// Pointers - 64 bit, pointer value truncated if assigned to a 32-bit variable.
+// Pointers - 64 bit, pointer value truncated if assigned to a 32-bit variable. 
 // size_t, time_t, ptrdiff_t - 64 bit, check if int is processes as these and then truncated when passed back as int.
 // %x in printf works on only first 32 bits, use %I32x (32 bit), %I64x (64 bit). %p (hex format for a pointer) will work as expected.
 // A 32-bit unsigned negative number becomes a large 64-bit positive number, declare variable as a signed value or explicitly typecast it to LONG.
 
-// Alignment (1 byte is 8 bits) - Byte – 8 bits, Word – 16 bits, Double Word – 32 bits, Quad Word – 64 bits, Octa Word – 128 bits.
+// Alignment (1 byte is 8 bits) - Byte â€“ 8 bits, Word â€“ 16 bits, Double Word â€“ 32 bits, Quad Word â€“ 64 bits, Octa Word â€“ 128 bits.
 // int32 can store 32 bit values or 32 flags.
 
 #if defined(_WINDOWS)
