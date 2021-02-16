@@ -25,9 +25,16 @@ class StdConsole
 public:
 	HANDLE hConsole = nullptr;
 
-	StdConsole(const char* window_title, int xpos, int ypos, int width, int height)
+	StdConsole() {}
+	~StdConsole() { deinit(); }
+	
+	bool init(const char* window_title, int xpos, int ypos, int width, int height)
 	{
-		if (!AllocConsole()) { MessageBoxW(nullptr, L"Couldn't create output console.", L"Error", 0); }
+		if (!AllocConsole()) 
+		{ 
+			MessageBoxW(nullptr, L"Couldn't create output console.", L"Error", 0); 
+			return false; 
+		}
 
 		HWND consoleWindow = GetConsoleWindow();
 		MoveWindow(consoleWindow, xpos, ypos, width, height, TRUE);
@@ -40,9 +47,9 @@ public:
 
 		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 		SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN|FOREGROUND_RED);
+		return true;
 	}
-
-	~StdConsole() { deinit(); }
+		
 	void deinit() { FreeConsole(); }
 };
 
@@ -51,10 +58,12 @@ class RendererGL2 //: public IRenderer
 public:
 	HGLRC m_hRC = nullptr;
     HDC m_hDC = nullptr;
+	HWND m_render_wnidow = nullptr;
 
 	void init(HWND hWnd)
 	{
-		m_hDC = GetDC(hWnd);
+		m_render_wnidow = hWnd;
+		m_hDC = GetDC(m_render_wnidow);
 
 		PIXELFORMATDESCRIPTOR pfd = {0};
 		pfd.nSize = sizeof(pfd);
@@ -79,7 +88,7 @@ public:
 		m_hRC = temp_hRC;
 	}
 
-	void deinit(HWND hWnd)
+	void deinit()
 	{
 		if (m_hRC)											
 	    {
@@ -90,7 +99,7 @@ public:
 
         if (m_hDC)
         {
-            ReleaseDC(hWnd, m_hDC);
+            ReleaseDC(m_render_wnidow, m_hDC);
             m_hDC = nullptr;
         }
 	}
@@ -371,7 +380,8 @@ LRESULT CALLBACK MainWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 
-	StdConsole gconstd("NexWars Std Console", 864, 0, 640, 640);
+	StdConsole gconstd;
+	gconstd.init("NexWars Std Console", 864, 0, 640, 640);
 	gout << "SysConsole Initialized." << sdf;
 
 	WinApp nw_app;
@@ -423,7 +433,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     } // while: app_running
 
 
-    renderer->deinit(nw_app.m_active_window);
+    renderer->deinit();
 
 
     nw_app.deinit();
