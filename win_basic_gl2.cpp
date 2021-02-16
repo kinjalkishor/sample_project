@@ -41,7 +41,7 @@ public:
 		SetWindowText(consoleWindow, L"Std Console");	
 
 		// The freopen_s function closes the file currently associated with stream and reassigns stream to the file specified by path.
-		freopen("conin$", "r", stdin);
+		freopen("conin$", "r", stdin); 
 		freopen("conout$", "w", stdout);
 		freopen("conout$", "w", stderr);
 
