@@ -5,14 +5,10 @@ MSVC project files supplied.
 
 <details>
 <summary>Heading</summary>
-<ul>
-<li> markdown list 1</li>
-<ul>
-<li> nested list 1</li>
-<li> nested list 2</li>
-</ul>
-<li> markdown list 2</li>
-</ul>
+<!--All you need is a blank line-->
+
+    + markdown list 1
+    + markdown list 2
 </details>
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D539LS3MUHBH4&currency_code=USD" 
