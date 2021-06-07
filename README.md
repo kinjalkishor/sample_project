@@ -7,8 +7,9 @@ MSVC project files supplied.
 <summary>Heading</summary>
 <!--All you need is a blank line-->
 
-    + markdown list 1
-    + markdown list 2
+	+ Thanks for your support!
+	+ Wow, amazing!
+	+ Gold Tier!
 </details>
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D539LS3MUHBH4&currency_code=USD" 
