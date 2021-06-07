@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{503ba5cf-98d7-4b34-aeab-1c58e6a0c440}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_q2">
+      <UniqueIdentifier>{b29d17d2-0b29-4dc2-8bc9-2a20322d410c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_rs">
+      <UniqueIdentifier>{5b88dffe-1522-42bc-9e41-98096cc81df7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base_ex">
+      <UniqueIdentifier>{be22063a-42d0-4dbb-85dd-38531a30e229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common_ex">
+      <UniqueIdentifier>{e452cc51-b138-4bc5-b1a8-bc5d9b2a6756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_lib_src">
+      <UniqueIdentifier>{2321b1e2-100e-4680-bd32-e8d233ea577c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_lib_src\minilua">
+      <UniqueIdentifier>{fd72fc94-f8e5-4b29-b426-0aec775a9723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_t2">
+      <UniqueIdentifier>{68d8eed3-011a-49db-aa2e-7406a63be2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="a_q2\rs">
+      <UniqueIdentifier>{8592064a-0e84-4f71-8c32-ebd2f5983154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{45784609-ace7-4cf3-a9f0-8206e36d4172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\ds">
+      <UniqueIdentifier>{ca306966-251e-4aa0-8dd6-e5adf041b65d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="q2\q2_gl2_renderer.ixx">
+      <Filter>a_q2\rs</Filter>
+    </ClCompile>
+    <ClCompile Include="q2\q2_gl4_renderer.ixx">
+      <Filter>a_q2\rs</Filter>
+    </ClCompile>
+    <ClCompile Include="q2\q2_shared.ixx">
+      <Filter>a_q2</Filter>
+    </ClCompile>
+    <ClCompile Include="q2\q2_types.ixx">
+      <Filter>a_q2</Filter>
+    </ClCompile>
+    <ClCompile Include="q2\q2_win_app.ixx">
+      <Filter>a_q2</Filter>
+    </ClCompile>
+    <ClCompile Include="q2\q2_win_sys.ixx">
+      <Filter>a_q2</Filter>
+    </ClCompile>
+    <ClCompile Include="t2\t2_rs_d3d11_renderer.ixx">
+      <Filter>a_t2</Filter>
+    </ClCompile>
+    <ClCompile Include="t2\t2_rs_gl4_renderer.ixx">
+      <Filter>a_t2</Filter>
+    </ClCompile>
+    <ClCompile Include="t2\t2_rs_renderer.ixx">
+      <Filter>a_t2</Filter>
+    </ClCompile>
+    <ClCompile Include="base_color_values.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_console.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_debug.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_def.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_ft_def.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_gmath.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_gmath_proj.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_list1.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_math.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_math_arrayfunc.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_shared.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_string1.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_template3.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_template4s.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_template5.ixx">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base_template1.ixx">
+      <Filter>base\ds</Filter>
+    </ClCompile>
+    <ClCompile Include="base_template2.ixx">
+      <Filter>base\ds</Filter>
+    </ClCompile>
+    <ClCompile Include="win_app.ixx">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_app_basic.ixx">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_basic_gl2.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_extern_globals.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main_q3.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main_t2.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main_ts.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="win_sys.ixx">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="t2\t2_rs_renderer.h">
+      <Filter>a_t2</Filter>
+    </ClInclude>
+    <ClInclude Include="base_debug.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base_def.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base_gmath_wp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base_iostream.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base_shared.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base_ex\temp_test.h">
+      <Filter>base_ex</Filter>
+    </ClInclude>
+    <ClInclude Include="base_ex\template_ref.h">
+      <Filter>base_ex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\com_shared.h">
+      <Filter>common_ex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\not_include.h">
+      <Filter>common_ex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\old_ref_lib.h">
+      <Filter>common_ex</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
