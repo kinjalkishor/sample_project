@@ -13,11 +13,15 @@ MSVC project files supplied.
 </details>
 
 <table>
-<tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
-	<option value="Thanks for your support!">Thanks for your support! : $5.00 USD - monthly</option>
-	<option value="Wow, amazing!">Wow, amazing! : $25.00 USD - monthly</option>
-	<option value="Gold Tier!">Gold Tier! : $100.00 USD - monthly</option>
-</select> </td></tr>
+<tbody>
+<tr>
+<td><input type="hidden" name="on0" value=""></td>
+</tr>
+<tr>
+<td><select name="os0"><option value="Thanks for your support!">Thanks for your support! : $5.00 USD - monthly</option> <option value="Wow, amazing!">Wow, amazing! : $25.00 USD - monthly</option> <option value="Gold Tier!">Gold Tier! : $100.00 USD - monthly</option></select></td>
+</tr>
+</tbody>
+</table>
 	
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D539LS3MUHBH4&currency_code=USD" 
 method="post" target="_top">
