@@ -23,7 +23,7 @@ MSVC project files supplied.
 </tbody>
 </table>
 	
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D539LS3MUHBH4&currency_code=USD&on0= &os0="Thanks for your support!">Thanks for your support! : $5.00 USD - monthly" 
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D539LS3MUHBH4&currency_code=USD&on0=""&os0="Thanks for your support!">Thanks for your support! : $5.00 USD - monthly" 
 method="post" target="_top">
 <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_subscribeCC_LG.gif" alt="PayPal this" 
 title="PayPal – The safer, easier way to pay online!" border="0" />
